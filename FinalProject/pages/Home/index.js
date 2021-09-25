@@ -32,9 +32,9 @@ export default function Home({ navigation }) {
       <ScrollView>
           {data && data.map((item,i)=>{
               return <>
-              <TouchableOpacity onPress={()=>navigation.navigate('Detail',{
-                  data:item
-              })}>
+              <TouchableOpacity onPress={()=>navigation.navigate('Detail',
+              {data:item}
+              )}>
               <View style={styles.articleList}>
               <Image source={{uri:item.urlToImage}} style={styles.image}/>
                 
