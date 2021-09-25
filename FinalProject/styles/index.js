@@ -30,6 +30,7 @@ export const form = StyleSheet.create({
     position: "relative"
   },
   heading: {
+    marginTop:24,
     fontSize: 32,
     fontWeight: "bold",
     paddingTop: 0

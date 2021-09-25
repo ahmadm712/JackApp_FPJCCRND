@@ -9,7 +9,7 @@ import { NavigationContainer } from '@react-navigation/native';
 const Stack = createStackNavigator();
 const Tab = createBottomTabNavigator();
 
-import {Home,Login,Register,SplashScreen } from '../pages'
+import {Home,Login,Register,SplashScreen,About ,Detail} from '../pages'
 
 
 
@@ -21,6 +21,8 @@ export default function Router() {
             <Stack.Screen component={Login} name="Login"/>
             <Stack.Screen component={Register} name="Register"/>
             <Stack.Screen component={Home} name="Home"/>
+            <Stack.Screen component={About} name="About"/>
+            <Stack.Screen component={Detail} name="Detail"/>
         </Stack.Navigator>
         </NavigationContainer>
         
