@@ -66,6 +66,12 @@ export const form = StyleSheet.create({
     backgroundColor: colors.tertiary,
     padding: 15
   },
+  button2: {
+    borderRadius: 5,
+    alignContent: "center",
+    backgroundColor: colors.thrid,
+    padding: 15
+  },
   disabled: {
     backgroundColor: colors.disabled
   },
