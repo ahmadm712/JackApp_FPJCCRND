@@ -4,39 +4,39 @@ export const colors = {
   primary: "#fff",
   secondary: "#adadad",
   tertiary: "#8759F2",
-  thrid:"#FF3E80",
+  thrid: "#FF3E80",
   alternative: "#666",
   fb: "#39559f",
-  disabled: "#8759F2"
+  disabled: "#8759F2",
 };
 
 export const basic = StyleSheet.create({
   container: {
     flex: 1,
     padding: 20,
-    backgroundColor: colors.primary
+    backgroundColor: colors.primary,
   },
   image: {
     width: "100%",
     height: "60%",
-    resizeMode: "cover"
-  }
+    resizeMode: "cover",
+  },
 });
 
 export const form = StyleSheet.create({
   field: {
     padding: 15,
     paddingVertical: 14,
-    position: "relative"
+    position: "relative",
   },
   heading: {
-    marginTop:24,
+    marginTop: 24,
     fontSize: 32,
     fontWeight: "bold",
-    paddingTop: 0
+    paddingTop: 0,
   },
   label: {
-    color: colors.secondary
+    color: colors.secondary,
   },
   input: {
     borderBottomWidth: 2,
@@ -44,7 +44,7 @@ export const form = StyleSheet.create({
     paddingVertical: 10,
     fontWeight: "bold",
     letterSpacing: 1,
-    fontSize: 15
+    fontSize: 15,
   },
   eye: {
     position: "absolute",
@@ -53,69 +53,69 @@ export const form = StyleSheet.create({
     fontSize: 25,
     color: colors.secondary,
     padding: 20,
-    paddingRight: 15
+    paddingRight: 15,
   },
   terms: {
     fontWeight: "bold",
     color: colors.tertiary,
     fontSize: 16,
-    padding: 5
+    padding: 5,
   },
   button: {
     borderRadius: 5,
     alignContent: "center",
     backgroundColor: colors.tertiary,
-    padding: 15
+    padding: 15,
   },
   button2: {
     borderRadius: 5,
     alignContent: "center",
     backgroundColor: colors.thrid,
-    padding: 15
+    padding: 15,
   },
   disabled: {
-    backgroundColor: colors.disabled
+    backgroundColor: colors.disabled,
   },
   buttonText: {
     textAlign: "center",
     fontWeight: "bold",
     color: colors.primary,
-    fontSize: 15
+    fontSize: 15,
   },
   button1: {
     backgroundColor: colors.primary,
-    padding: 15
+    padding: 15,
   },
   field1: {
     flexDirection: "row",
-    alignItems: "center"
+    alignItems: "center",
   },
   text: {
     color: colors.secondary,
-    fontSize: 15
+    fontSize: 15,
   },
   buttonText1: {
     fontWeight: "bold",
     color: colors.thrid,
-    fontSize: 15
+    fontSize: 15,
   },
   google: {
     backgroundColor: colors.primary,
     borderColor: colors.secondary,
-    borderWidth: 1
+    borderWidth: 1,
   },
   icon: {
     position: "absolute",
     top: 8,
     left: 15,
-    paddingLeft: 0
+    paddingLeft: 0,
   },
   fb: {
-    backgroundColor: colors.fb
+    backgroundColor: colors.fb,
   },
   message: {
     textAlign: "center",
     fontSize: 13,
-    color: "tomato"
-  }
+    color: "tomato",
+  },
 });
