@@ -59,8 +59,13 @@ export default function Home({ navigation }) {
                         />
 
                         <View style={styles.articleTA}>
-                          <Text style={styles.articleT}>{item.title}</Text>
-                          <Text>{item.author}</Text>
+                          <Text style={styles.articleTH}>{item.title}</Text>
+                          <View style={{ flexDirection: "row" }}>
+                          <Text style={styles.detailAA}>
+                            {item.publishedAt.slice(0, 10)}
+                          </Text>
+                          <Text style={styles.detailAA}>{item.author}</Text>
+                        </View>
                         </View>
                       </View>
                     </TouchableOpacity>
@@ -87,7 +92,7 @@ export default function Home({ navigation }) {
                       <View style={styles.articleTA}>
                         <Text style={styles.articleT}>{item.title}</Text>
                         <View style={{ flexDirection: "row" }}>
-                          <Text style={styles.detailAA}>
+                          <Text style={styles.detailAP}>
                             {item.publishedAt.slice(0, 10)}
                           </Text>
                           <Text style={styles.detailAA}>{item.author}</Text>
@@ -147,30 +152,35 @@ const styles = StyleSheet.create({
   },
   detailAA: {
     fontSize: 14,
-
+    color:"#39559f",
+    margin: 5,
+  },
+  detailAP: {
+    fontSize: 14,
+    // color:"#39559f",
     margin: 5,
   },
   image: {
-    width: 80,
-    height: 80,
-    marginRight: 8,
+    width: 90,
+    height: 90,
+    
     borderRadius: 10,
   },
   imageH: {
-    width: width * 0.7,
+    width: width * 0.65,
     height: 100,
 
     borderRadius: 10,
   },
   articleList: {
-    width: width,
+    width: width*0.955,
     backgroundColor: "white",
     margin: width * 0.025,
-    borderRadius: width * 0.05,
+    borderRadius: 10,
     shadowColor: "#000",
     shadowOffset: { width: 0.5, height: 0.5 },
     shadowOpacity: 0.5,
-    shadowRadius: 5,
+    shadowRadius: 10,
     flexDirection: "row",
   },
   articleListH: {
@@ -186,12 +196,23 @@ const styles = StyleSheet.create({
   },
   articleTA: {
     justifyContent: "space-between",
-    color: "#39559f",
+    // color: "#39559f",
+    marginLeft:8
   },
   articleT: {
     fontWeight: "bold",
     fontSize: 14,
     width: width * 0.7,
+    marginBottom:8
+    // marginLeft
+    // marginHorizontal: width * 0.05,
+    // marginVertical: width * 0.03,
+  },
+  articleTH: {
+    fontWeight: "bold",
+    fontSize: 14,
+    width: width * 0.6,
+    marginBottom:8
     // marginLeft
     // marginHorizontal: width * 0.05,
     // marginVertical: width * 0.03,

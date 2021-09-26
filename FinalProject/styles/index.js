@@ -8,6 +8,7 @@ export const colors = {
   alternative: "#666",
   fb: "#39559f",
   disabled: "#8759F2",
+  red:"#B7222B"
 };
 
 export const basic = StyleSheet.create({
@@ -65,6 +66,12 @@ export const form = StyleSheet.create({
     borderRadius: 5,
     alignContent: "center",
     backgroundColor: colors.tertiary,
+    padding: 15,
+  },
+  button10: {
+    borderRadius: 5,
+    alignContent: "center",
+    backgroundColor: colors.red,
     padding: 15,
   },
   button2: {

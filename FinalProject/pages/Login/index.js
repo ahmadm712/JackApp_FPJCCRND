@@ -52,33 +52,18 @@ const Login = ({ navigation }) => {
       });
   };
 
-  const validateEmail = (email) => {
-    var re =
-      /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
-    return re.test(email);
-  };
+  // const validateEmail = (email) => {
+  //   var re =
+  //     /^(([^<>()\[\]\\.,;:\s@"]+(\.[^<>()\[\]\\.,;:\s@"]+)*)|(".+"))@((\[[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}\.[0-9]{1,3}])|(([a-zA-Z\-0-9]+\.)+[a-zA-Z]{2,}))$/;
+  //   return re.test(email);
+  // };
 
-  const validatePassword = (password) => {
-    let re = /[0-9]+/;
-    return re.test(password);
-  };
+  // const validatePassword = (password) => {
+  //   let re = /[0-9]+/;
+  //   return re.test(password);
+  // };
 
-  const handleSubmit = () => {
-    if (email === "" || password === "") {
-      setMessage("Fill in all fields");
-    } else if (!validateEmail(email)) {
-      setMessage("Only valid email addresses are accepted");
-    } else if (password.length <= 10) {
-      setMessage("Password should have more than 10 characters");
-    } else if (!validatePassword(password)) {
-      setMessage("Password should include numbers");
-    } else {
-      setMessage("");
-      setPassword("");
-      setEmail("");
-      navigation.navigate("Home");
-    }
-  };
+
 
   return (
     <TouchableWithoutFeedback onPress={() => Keyboard.dismiss()}>

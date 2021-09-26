@@ -58,8 +58,8 @@ const BottomTab = () => (
               source={News}
               resizeMode="center"
               style={{
-                width: 25,
-                height: 25,
+                width: 30,
+                height: 30,
                 tintColor: focused ? "#8759F2" : "#cccc",
               }}
             />
@@ -89,8 +89,8 @@ const BottomTab = () => (
               source={Me}
               resizeMode="center"
               style={{
-                width: 25,
-                height: 25,
+                width: 30,
+                height: 30,
                 tintColor: focused ? "#8759F2" : "#cccc",
               }}
             />
