@@ -18,7 +18,8 @@
       "adaptiveIcon": {
         "foregroundImage": "./assets/image/adaptive-icon.png",
         "backgroundColor": "#221F1E"
-      }
+      },
+      "package": "com.ahmadm24.JackApp"
     },
     "web": {
       "favicon": "./assets/image/favicon.png"
